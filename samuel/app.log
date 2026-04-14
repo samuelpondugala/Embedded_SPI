@@ -1,0 +1,181 @@
+2026-04-07 17:16:21,379 - INFO - Starting pytest execution for run 20260407-171621-379062 with workers=4 dist=loadgroup command=/usr/bin/python3 -m pytest -vv --color=no --junit-xml=/home/team2/Desktop/samuel/test_runs/pytest-20260407-171621-379062.xml -n 4 --dist=loadgroup
+2026-04-07 17:16:21,419 - INFO - PYTEST_OUTPUT[20260407-171621-379062]: /usr/bin/python3: No module named pytest
+2026-04-07 17:16:21,430 - INFO - TEST_SUMMARY[20260407-171621-379062]: {"dist": "loadgroup", "duration_seconds": 0.0, "failed": 0, "junit_xml": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-171621-379062.xml", "passed": 0, "raw_output_log": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-171621-379062.log", "returncode": 1, "run_id": "20260407-171621-379062", "skipped": 0, "status": "FAILED", "test_case_log": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-171621-379062.jsonl", "total": 0, "workers": 4}
+2026-04-07 17:16:21,431 - ERROR - PYTEST_TAIL[20260407-171621-379062]: /usr/bin/python3: No module named pytest
+2026-04-07 17:19:54,060 - INFO - Starting pytest execution for run 20260407-171954-059855 with workers=4 dist=loadgroup command=/home/team2/raspivenv/bin/python3 -m pytest -vv --color=no --junit-xml=/home/team2/Desktop/samuel/test_runs/pytest-20260407-171954-059855.xml -n 4 --dist=loadgroup
+2026-04-07 17:19:54,591 - INFO - PYTEST_OUTPUT[20260407-171954-059855]: ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...]
+2026-04-07 17:19:54,592 - INFO - PYTEST_OUTPUT[20260407-171954-059855]: __main__.py: error: unrecognized arguments: -n --dist=loadgroup
+2026-04-07 17:19:54,593 - INFO - PYTEST_OUTPUT[20260407-171954-059855]:   inifile: None
+2026-04-07 17:19:54,595 - INFO - PYTEST_OUTPUT[20260407-171954-059855]:   rootdir: /home/team2/Desktop/samuel
+2026-04-07 17:19:54,596 - INFO - PYTEST_OUTPUT[20260407-171954-059855]: 
+2026-04-07 17:19:54,698 - INFO - TEST_SUMMARY[20260407-171954-059855]: {"dist": "loadgroup", "duration_seconds": 0.0, "failed": 0, "junit_xml": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-171954-059855.xml", "passed": 0, "raw_output_log": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-171954-059855.log", "returncode": 4, "run_id": "20260407-171954-059855", "skipped": 0, "status": "FAILED", "test_case_log": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-171954-059855.jsonl", "total": 0, "workers": 4}
+2026-04-07 17:19:54,698 - ERROR - PYTEST_TAIL[20260407-171954-059855]: ERROR: usage: __main__.py [options] [file_or_dir] [file_or_dir] [...] | __main__.py: error: unrecognized arguments: -n --dist=loadgroup |   inifile: None |   rootdir: /home/team2/Desktop/samuel | 
+2026-04-07 17:20:43,831 - INFO - Starting pytest execution for run 20260407-172043-831074 with workers=4 dist=loadgroup command=/home/team2/raspivenv/bin/python3 -m pytest -vv --color=no --junit-xml=/home/team2/Desktop/samuel/test_runs/pytest-20260407-172043-831074.xml -n 4 --dist=loadgroup
+2026-04-07 17:20:44,577 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: ============================= test session starts ==============================
+2026-04-07 17:20:44,577 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- /home/team2/raspivenv/bin/python3
+2026-04-07 17:20:44,608 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: cachedir: .pytest_cache
+2026-04-07 17:20:44,609 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: rootdir: /home/team2/Desktop/samuel
+2026-04-07 17:20:44,610 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: plugins: xdist-3.8.0
+2026-04-07 17:20:44,610 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: created: 4/4 workers
+2026-04-07 17:20:45,872 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: 4 workers [23 items]
+2026-04-07 17:20:45,877 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: 
+2026-04-07 17:20:45,878 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: scheduling tests via LoadGroupScheduling
+2026-04-07 17:20:45,878 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: 
+2026-04-07 17:20:45,878 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_divide@divide
+2026-04-07 17:20:45,880 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_multiply@multiply
+2026-04-07 17:20:45,882 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_add@add
+2026-04-07 17:20:45,912 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw1] [  4%] PASSED test_calculator.py::test_add@add
+2026-04-07 17:20:45,917 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_subtract@subtract
+2026-04-07 17:20:45,917 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw2] [  8%] PASSED test_calculator.py::test_subtract@subtract
+2026-04-07 17:20:45,917 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_subtract_cases[small_positive]@subtract
+2026-04-07 17:20:45,918 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_add_cases[small_positive]@add
+2026-04-07 17:20:45,920 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw2] [ 13%] PASSED test_calculator.py::test_calculate_subtract_cases[small_positive]@subtract
+2026-04-07 17:20:45,920 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_subtract_cases[balanced]@subtract
+2026-04-07 17:20:45,921 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw2] [ 17%] PASSED test_calculator.py::test_calculate_subtract_cases[balanced]@subtract
+2026-04-07 17:20:45,921 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw0] [ 21%] PASSED test_calculator.py::test_divide@divide
+2026-04-07 17:20:45,922 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_divide_by_zero_raises_value_error@divide
+2026-04-07 17:20:45,922 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw0] [ 26%] PASSED test_calculator.py::test_divide_by_zero_raises_value_error@divide
+2026-04-07 17:20:45,923 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_divide_cases[small_positive]@divide
+2026-04-07 17:20:45,924 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw3] [ 30%] PASSED test_calculator.py::test_multiply@multiply
+2026-04-07 17:20:45,925 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_multiply_cases[small_positive]@multiply
+2026-04-07 17:20:45,926 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw3] [ 34%] PASSED test_calculator.py::test_calculate_multiply_cases[small_positive]@multiply
+2026-04-07 17:20:45,927 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_multiply_cases[whole_number]@multiply
+2026-04-07 17:20:45,929 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw3] [ 39%] PASSED test_calculator.py::test_calculate_multiply_cases[whole_number]@multiply
+2026-04-07 17:20:45,931 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_multiply_cases[odd_times_even]@multiply
+2026-04-07 17:20:45,934 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_subtract_cases[odd_minus_even]@subtract
+2026-04-07 17:20:45,937 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw1] [ 43%] PASSED test_calculator.py::test_calculate_add_cases[small_positive]@add
+2026-04-07 17:20:45,938 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw3] [ 47%] PASSED test_calculator.py::test_calculate_multiply_cases[odd_times_even]@multiply
+2026-04-07 17:20:45,941 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_add_cases[negative_pair]@add
+2026-04-07 17:20:45,949 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw1] [ 52%] PASSED test_calculator.py::test_calculate_add_cases[negative_pair]@add
+2026-04-07 17:20:45,953 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_add_cases[odd_plus_even]@add
+2026-04-07 17:20:45,958 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw1] [ 56%] PASSED test_calculator.py::test_calculate_add_cases[odd_plus_even]@add
+2026-04-07 17:20:45,964 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw0] [ 60%] PASSED test_calculator.py::test_calculate_divide_cases[small_positive]@divide
+2026-04-07 17:20:45,969 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_divide_cases[whole_number]@divide
+2026-04-07 17:20:45,971 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw0] [ 65%] PASSED test_calculator.py::test_calculate_divide_cases[whole_number]@divide
+2026-04-07 17:20:45,972 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_divide_cases[whole_result]@divide
+2026-04-07 17:20:45,985 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw0] [ 69%] PASSED test_calculator.py::test_calculate_divide_cases[whole_result]@divide
+2026-04-07 17:20:45,993 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw2] [ 73%] PASSED test_calculator.py::test_calculate_subtract_cases[odd_minus_even]@subtract
+2026-04-07 17:20:45,994 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_subtract_cases[negative_result]@subtract
+2026-04-07 17:20:45,996 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw2] [ 78%] PASSED test_calculator.py::test_calculate_subtract_cases[negative_result]@subtract
+2026-04-07 17:20:46,001 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_add_cases[mixed_large]@add
+2026-04-07 17:20:46,003 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_multiply_cases[negative_pair]@multiply
+2026-04-07 17:20:46,003 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw3] [ 82%] PASSED test_calculator.py::test_calculate_multiply_cases[negative_pair]@multiply
+2026-04-07 17:20:46,006 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_with_invalid_operation@misc
+2026-04-07 17:20:46,007 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw3] [ 86%] PASSED test_calculator.py::test_calculate_with_invalid_operation@misc
+2026-04-07 17:20:46,010 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculator_class_wrapper@misc
+2026-04-07 17:20:46,013 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw3] [ 91%] PASSED test_calculator.py::test_calculator_class_wrapper@misc
+2026-04-07 17:20:46,015 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: test_calculator.py::test_calculate_divide_cases[negative_result]@divide
+2026-04-07 17:20:46,019 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw1] [ 95%] PASSED test_calculator.py::test_calculate_add_cases[mixed_large]@add
+2026-04-07 17:20:46,722 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: [gw0] [100%] PASSED test_calculator.py::test_calculate_divide_cases[negative_result]@divide
+2026-04-07 17:20:46,723 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: 
+2026-04-07 17:20:46,725 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: - generated xml file: /home/team2/Desktop/samuel/test_runs/pytest-20260407-172043-831074.xml -
+2026-04-07 17:20:46,726 - INFO - PYTEST_OUTPUT[20260407-172043-831074]: ============================== 23 passed in 2.15s ==============================
+2026-04-07 17:20:46,987 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_divide@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_divide@divide", "worker": "gw0"}
+2026-04-07 17:20:46,988 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_multiply@multiply", "operation": "multiply", "status": "PASSED", "test": "test_calculator.py::test_multiply@multiply", "worker": "gw3"}
+2026-04-07 17:20:46,988 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.008, "name": "test_add@add", "operation": "add", "status": "PASSED", "test": "test_calculator.py::test_add@add", "worker": "gw1"}
+2026-04-07 17:20:46,989 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_subtract@subtract", "operation": "subtract", "status": "PASSED", "test": "test_calculator.py::test_subtract@subtract", "worker": "gw2"}
+2026-04-07 17:20:46,989 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.004, "name": "test_calculate_add_cases[small_positive]@add", "operation": "add", "status": "PASSED", "test": "test_calculator.py::test_calculate_add_cases[small_positive]@add", "worker": "gw1"}
+2026-04-07 17:20:46,989 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.003, "name": "test_calculate_subtract_cases[small_positive]@subtract", "operation": "subtract", "status": "PASSED", "test": "test_calculator.py::test_calculate_subtract_cases[small_positive]@subtract", "worker": "gw2"}
+2026-04-07 17:20:46,990 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.003, "name": "test_calculate_subtract_cases[balanced]@subtract", "operation": "subtract", "status": "PASSED", "test": "test_calculator.py::test_calculate_subtract_cases[balanced]@subtract", "worker": "gw2"}
+2026-04-07 17:20:46,990 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_divide_by_zero_raises_value_error@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_divide_by_zero_raises_value_error@divide", "worker": "gw0"}
+2026-04-07 17:20:46,990 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.004, "name": "test_calculate_divide_cases[small_positive]@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_calculate_divide_cases[small_positive]@divide", "worker": "gw0"}
+2026-04-07 17:20:46,991 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.003, "name": "test_calculate_multiply_cases[small_positive]@multiply", "operation": "multiply", "status": "PASSED", "test": "test_calculator.py::test_calculate_multiply_cases[small_positive]@multiply", "worker": "gw3"}
+2026-04-07 17:20:46,991 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_multiply_cases[whole_number]@multiply", "operation": "multiply", "status": "PASSED", "test": "test_calculator.py::test_calculate_multiply_cases[whole_number]@multiply", "worker": "gw3"}
+2026-04-07 17:20:46,991 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_subtract_cases[odd_minus_even]@subtract", "operation": "subtract", "status": "PASSED", "test": "test_calculator.py::test_calculate_subtract_cases[odd_minus_even]@subtract", "worker": "gw2"}
+2026-04-07 17:20:46,992 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.006, "name": "test_calculate_multiply_cases[odd_times_even]@multiply", "operation": "multiply", "status": "PASSED", "test": "test_calculator.py::test_calculate_multiply_cases[odd_times_even]@multiply", "worker": "gw3"}
+2026-04-07 17:20:46,992 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_add_cases[negative_pair]@add", "operation": "add", "status": "PASSED", "test": "test_calculator.py::test_calculate_add_cases[negative_pair]@add", "worker": "gw1"}
+2026-04-07 17:20:46,992 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_add_cases[odd_plus_even]@add", "operation": "add", "status": "PASSED", "test": "test_calculator.py::test_calculate_add_cases[odd_plus_even]@add", "worker": "gw1"}
+2026-04-07 17:20:46,993 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_divide_cases[whole_number]@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_calculate_divide_cases[whole_number]@divide", "worker": "gw0"}
+2026-04-07 17:20:46,993 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_divide_cases[whole_result]@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_calculate_divide_cases[whole_result]@divide", "worker": "gw0"}
+2026-04-07 17:20:46,993 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.007, "name": "test_calculate_subtract_cases[negative_result]@subtract", "operation": "subtract", "status": "PASSED", "test": "test_calculator.py::test_calculate_subtract_cases[negative_result]@subtract", "worker": "gw2"}
+2026-04-07 17:20:46,994 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.004, "name": "test_calculate_multiply_cases[negative_pair]@multiply", "operation": "multiply", "status": "PASSED", "test": "test_calculator.py::test_calculate_multiply_cases[negative_pair]@multiply", "worker": "gw3"}
+2026-04-07 17:20:46,994 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_with_invalid_operation@misc", "operation": "misc", "status": "PASSED", "test": "test_calculator.py::test_calculate_with_invalid_operation@misc", "worker": "gw3"}
+2026-04-07 17:20:46,994 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.01, "name": "test_calculate_add_cases[mixed_large]@add", "operation": "add", "status": "PASSED", "test": "test_calculator.py::test_calculate_add_cases[mixed_large]@add", "worker": "gw1"}
+2026-04-07 17:20:46,995 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculator_class_wrapper@misc", "operation": "misc", "status": "PASSED", "test": "test_calculator.py::test_calculator_class_wrapper@misc", "worker": "gw3"}
+2026-04-07 17:20:46,995 - INFO - TEST_CASE[20260407-172043-831074]: {"classname": "test_calculator", "duration_seconds": 0.019, "name": "test_calculate_divide_cases[negative_result]@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_calculate_divide_cases[negative_result]@divide", "worker": "gw0"}
+2026-04-07 17:20:46,996 - INFO - TEST_SUMMARY[20260407-172043-831074]: {"dist": "loadgroup", "duration_seconds": 2.15, "failed": 0, "junit_xml": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-172043-831074.xml", "passed": 23, "raw_output_log": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-172043-831074.log", "returncode": 0, "run_id": "20260407-172043-831074", "skipped": 0, "status": "SUCCESS", "test_case_log": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-172043-831074.jsonl", "total": 23, "workers": 4}
+2026-04-07 17:44:05,083 - INFO - Calculation requested: 1.0 subtract 11.0
+2026-04-07 17:44:08,387 - INFO - Starting pytest execution for run 20260407-174408-386768 with workers=4 dist=loadgroup command=/home/team2/raspivenv/bin/python3 -m pytest -vv --color=no --junit-xml=/home/team2/Desktop/samuel/test_runs/pytest-20260407-174408-386768.xml -n 4 --dist=loadgroup
+2026-04-07 17:44:08,968 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: ============================= test session starts ==============================
+2026-04-07 17:44:08,969 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- /home/team2/raspivenv/bin/python3
+2026-04-07 17:44:09,000 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: cachedir: .pytest_cache
+2026-04-07 17:44:09,001 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: rootdir: /home/team2/Desktop/samuel
+2026-04-07 17:44:09,001 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: plugins: xdist-3.8.0
+2026-04-07 17:44:09,002 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: created: 4/4 workers
+2026-04-07 17:44:10,219 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: 4 workers [23 items]
+2026-04-07 17:44:10,225 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: 
+2026-04-07 17:44:10,226 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: scheduling tests via LoadGroupScheduling
+2026-04-07 17:44:10,232 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: 
+2026-04-07 17:44:10,237 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_add@add
+2026-04-07 17:44:10,258 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw1] [  4%] PASSED test_calculator.py::test_add@add
+2026-04-07 17:44:10,260 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_subtract@subtract
+2026-04-07 17:44:10,266 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw2] [  8%] PASSED test_calculator.py::test_subtract@subtract
+2026-04-07 17:44:10,267 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_subtract_cases[small_positive]@subtract
+2026-04-07 17:44:10,269 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_multiply@multiply
+2026-04-07 17:44:10,269 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw3] [ 13%] PASSED test_calculator.py::test_multiply@multiply
+2026-04-07 17:44:10,269 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_multiply_cases[small_positive]@multiply
+2026-04-07 17:44:10,270 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_divide@divide
+2026-04-07 17:44:10,270 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw0] [ 17%] PASSED test_calculator.py::test_divide@divide
+2026-04-07 17:44:10,271 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_add_cases[small_positive]@add
+2026-04-07 17:44:10,272 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_divide_by_zero_raises_value_error@divide
+2026-04-07 17:44:10,272 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw2] [ 21%] PASSED test_calculator.py::test_calculate_subtract_cases[small_positive]@subtract
+2026-04-07 17:44:10,273 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_subtract_cases[balanced]@subtract
+2026-04-07 17:44:10,273 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw2] [ 26%] PASSED test_calculator.py::test_calculate_subtract_cases[balanced]@subtract
+2026-04-07 17:44:10,274 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_subtract_cases[odd_minus_even]@subtract
+2026-04-07 17:44:10,274 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw3] [ 30%] PASSED test_calculator.py::test_calculate_multiply_cases[small_positive]@multiply
+2026-04-07 17:44:10,275 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_multiply_cases[whole_number]@multiply
+2026-04-07 17:44:10,276 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw3] [ 34%] PASSED test_calculator.py::test_calculate_multiply_cases[whole_number]@multiply
+2026-04-07 17:44:10,276 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_multiply_cases[odd_times_even]@multiply
+2026-04-07 17:44:10,277 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw1] [ 39%] PASSED test_calculator.py::test_calculate_add_cases[small_positive]@add
+2026-04-07 17:44:10,278 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_add_cases[negative_pair]@add
+2026-04-07 17:44:10,279 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw1] [ 43%] PASSED test_calculator.py::test_calculate_add_cases[negative_pair]@add
+2026-04-07 17:44:10,280 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_add_cases[odd_plus_even]@add
+2026-04-07 17:44:10,280 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw1] [ 47%] PASSED test_calculator.py::test_calculate_add_cases[odd_plus_even]@add
+2026-04-07 17:44:10,281 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw2] [ 52%] PASSED test_calculator.py::test_calculate_subtract_cases[odd_minus_even]@subtract
+2026-04-07 17:44:10,281 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw0] [ 56%] PASSED test_calculator.py::test_divide_by_zero_raises_value_error@divide
+2026-04-07 17:44:10,282 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_divide_cases[small_positive]@divide
+2026-04-07 17:44:10,282 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw0] [ 60%] PASSED test_calculator.py::test_calculate_divide_cases[small_positive]@divide
+2026-04-07 17:44:10,283 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_divide_cases[whole_number]@divide
+2026-04-07 17:44:10,283 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw0] [ 65%] PASSED test_calculator.py::test_calculate_divide_cases[whole_number]@divide
+2026-04-07 17:44:10,284 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_divide_cases[whole_result]@divide
+2026-04-07 17:44:10,285 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw0] [ 69%] PASSED test_calculator.py::test_calculate_divide_cases[whole_result]@divide
+2026-04-07 17:44:10,285 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw3] [ 73%] PASSED test_calculator.py::test_calculate_multiply_cases[odd_times_even]@multiply
+2026-04-07 17:44:10,286 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_add_cases[mixed_large]@add
+2026-04-07 17:44:10,286 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_subtract_cases[negative_result]@subtract
+2026-04-07 17:44:10,287 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw2] [ 78%] PASSED test_calculator.py::test_calculate_subtract_cases[negative_result]@subtract
+2026-04-07 17:44:10,287 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_with_invalid_operation@misc
+2026-04-07 17:44:10,288 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_multiply_cases[negative_pair]@multiply
+2026-04-07 17:44:10,291 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw3] [ 82%] PASSED test_calculator.py::test_calculate_multiply_cases[negative_pair]@multiply
+2026-04-07 17:44:10,292 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculate_divide_cases[negative_result]@divide
+2026-04-07 17:44:10,298 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw0] [ 86%] PASSED test_calculator.py::test_calculate_divide_cases[negative_result]@divide
+2026-04-07 17:44:10,304 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw1] [ 91%] PASSED test_calculator.py::test_calculate_add_cases[mixed_large]@add
+2026-04-07 17:44:10,308 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw2] [ 95%] PASSED test_calculator.py::test_calculate_with_invalid_operation@misc
+2026-04-07 17:44:10,316 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: test_calculator.py::test_calculator_class_wrapper@misc
+2026-04-07 17:44:11,045 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: [gw2] [100%] PASSED test_calculator.py::test_calculator_class_wrapper@misc
+2026-04-07 17:44:11,049 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: 
+2026-04-07 17:44:11,050 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: - generated xml file: /home/team2/Desktop/samuel/test_runs/pytest-20260407-174408-386768.xml -
+2026-04-07 17:44:11,051 - INFO - PYTEST_OUTPUT[20260407-174408-386768]: ============================== 23 passed in 2.08s ==============================
+2026-04-07 17:44:11,309 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_add@add", "operation": "add", "status": "PASSED", "test": "test_calculator.py::test_add@add", "worker": "gw1"}
+2026-04-07 17:44:11,310 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_subtract@subtract", "operation": "subtract", "status": "PASSED", "test": "test_calculator.py::test_subtract@subtract", "worker": "gw2"}
+2026-04-07 17:44:11,311 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_multiply@multiply", "operation": "multiply", "status": "PASSED", "test": "test_calculator.py::test_multiply@multiply", "worker": "gw3"}
+2026-04-07 17:44:11,312 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_divide@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_divide@divide", "worker": "gw0"}
+2026-04-07 17:44:11,313 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.003, "name": "test_calculate_multiply_cases[small_positive]@multiply", "operation": "multiply", "status": "PASSED", "test": "test_calculator.py::test_calculate_multiply_cases[small_positive]@multiply", "worker": "gw3"}
+2026-04-07 17:44:11,313 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.005, "name": "test_calculate_subtract_cases[small_positive]@subtract", "operation": "subtract", "status": "PASSED", "test": "test_calculator.py::test_calculate_subtract_cases[small_positive]@subtract", "worker": "gw2"}
+2026-04-07 17:44:11,314 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_subtract_cases[balanced]@subtract", "operation": "subtract", "status": "PASSED", "test": "test_calculator.py::test_calculate_subtract_cases[balanced]@subtract", "worker": "gw2"}
+2026-04-07 17:44:11,315 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.003, "name": "test_calculate_subtract_cases[odd_minus_even]@subtract", "operation": "subtract", "status": "PASSED", "test": "test_calculator.py::test_calculate_subtract_cases[odd_minus_even]@subtract", "worker": "gw2"}
+2026-04-07 17:44:11,317 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.003, "name": "test_calculate_multiply_cases[whole_number]@multiply", "operation": "multiply", "status": "PASSED", "test": "test_calculator.py::test_calculate_multiply_cases[whole_number]@multiply", "worker": "gw3"}
+2026-04-07 17:44:11,318 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_multiply_cases[odd_times_even]@multiply", "operation": "multiply", "status": "PASSED", "test": "test_calculator.py::test_calculate_multiply_cases[odd_times_even]@multiply", "worker": "gw3"}
+2026-04-07 17:44:11,319 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.008, "name": "test_calculate_add_cases[small_positive]@add", "operation": "add", "status": "PASSED", "test": "test_calculator.py::test_calculate_add_cases[small_positive]@add", "worker": "gw1"}
+2026-04-07 17:44:11,320 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_add_cases[negative_pair]@add", "operation": "add", "status": "PASSED", "test": "test_calculator.py::test_calculate_add_cases[negative_pair]@add", "worker": "gw1"}
+2026-04-07 17:44:11,323 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_add_cases[odd_plus_even]@add", "operation": "add", "status": "PASSED", "test": "test_calculator.py::test_calculate_add_cases[odd_plus_even]@add", "worker": "gw1"}
+2026-04-07 17:44:11,325 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.003, "name": "test_divide_by_zero_raises_value_error@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_divide_by_zero_raises_value_error@divide", "worker": "gw0"}
+2026-04-07 17:44:11,327 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.007, "name": "test_calculate_divide_cases[small_positive]@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_calculate_divide_cases[small_positive]@divide", "worker": "gw0"}
+2026-04-07 17:44:11,328 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_divide_cases[whole_number]@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_calculate_divide_cases[whole_number]@divide", "worker": "gw0"}
+2026-04-07 17:44:11,328 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculate_divide_cases[whole_result]@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_calculate_divide_cases[whole_result]@divide", "worker": "gw0"}
+2026-04-07 17:44:11,329 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.003, "name": "test_calculate_add_cases[mixed_large]@add", "operation": "add", "status": "PASSED", "test": "test_calculator.py::test_calculate_add_cases[mixed_large]@add", "worker": "gw1"}
+2026-04-07 17:44:11,329 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.003, "name": "test_calculate_subtract_cases[negative_result]@subtract", "operation": "subtract", "status": "PASSED", "test": "test_calculator.py::test_calculate_subtract_cases[negative_result]@subtract", "worker": "gw2"}
+2026-04-07 17:44:11,329 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.003, "name": "test_calculate_multiply_cases[negative_pair]@multiply", "operation": "multiply", "status": "PASSED", "test": "test_calculator.py::test_calculate_multiply_cases[negative_pair]@multiply", "worker": "gw3"}
+2026-04-07 17:44:11,330 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.008, "name": "test_calculate_divide_cases[negative_result]@divide", "operation": "divide", "status": "PASSED", "test": "test_calculator.py::test_calculate_divide_cases[negative_result]@divide", "worker": "gw0"}
+2026-04-07 17:44:11,331 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.006, "name": "test_calculate_with_invalid_operation@misc", "operation": "misc", "status": "PASSED", "test": "test_calculator.py::test_calculate_with_invalid_operation@misc", "worker": "gw2"}
+2026-04-07 17:44:11,331 - INFO - TEST_CASE[20260407-174408-386768]: {"classname": "test_calculator", "duration_seconds": 0.002, "name": "test_calculator_class_wrapper@misc", "operation": "misc", "status": "PASSED", "test": "test_calculator.py::test_calculator_class_wrapper@misc", "worker": "gw2"}
+2026-04-07 17:44:11,332 - INFO - TEST_SUMMARY[20260407-174408-386768]: {"dist": "loadgroup", "duration_seconds": 2.081, "failed": 0, "junit_xml": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-174408-386768.xml", "passed": 23, "raw_output_log": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-174408-386768.log", "returncode": 0, "run_id": "20260407-174408-386768", "skipped": 0, "status": "SUCCESS", "test_case_log": "/home/team2/Desktop/samuel/test_runs/pytest-20260407-174408-386768.jsonl", "total": 23, "workers": 4}

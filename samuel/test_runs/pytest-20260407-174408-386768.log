@@ -1,0 +1,59 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- /home/team2/raspivenv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/team2/Desktop/samuel
+plugins: xdist-3.8.0
+created: 4/4 workers
+4 workers [23 items]
+
+scheduling tests via LoadGroupScheduling
+
+test_calculator.py::test_add@add 
+[gw1] [  4%] PASSED test_calculator.py::test_add@add 
+test_calculator.py::test_subtract@subtract 
+[gw2] [  8%] PASSED test_calculator.py::test_subtract@subtract 
+test_calculator.py::test_calculate_subtract_cases[small_positive]@subtract 
+test_calculator.py::test_multiply@multiply 
+[gw3] [ 13%] PASSED test_calculator.py::test_multiply@multiply 
+test_calculator.py::test_calculate_multiply_cases[small_positive]@multiply 
+test_calculator.py::test_divide@divide 
+[gw0] [ 17%] PASSED test_calculator.py::test_divide@divide 
+test_calculator.py::test_calculate_add_cases[small_positive]@add 
+test_calculator.py::test_divide_by_zero_raises_value_error@divide 
+[gw2] [ 21%] PASSED test_calculator.py::test_calculate_subtract_cases[small_positive]@subtract 
+test_calculator.py::test_calculate_subtract_cases[balanced]@subtract 
+[gw2] [ 26%] PASSED test_calculator.py::test_calculate_subtract_cases[balanced]@subtract 
+test_calculator.py::test_calculate_subtract_cases[odd_minus_even]@subtract 
+[gw3] [ 30%] PASSED test_calculator.py::test_calculate_multiply_cases[small_positive]@multiply 
+test_calculator.py::test_calculate_multiply_cases[whole_number]@multiply 
+[gw3] [ 34%] PASSED test_calculator.py::test_calculate_multiply_cases[whole_number]@multiply 
+test_calculator.py::test_calculate_multiply_cases[odd_times_even]@multiply 
+[gw1] [ 39%] PASSED test_calculator.py::test_calculate_add_cases[small_positive]@add 
+test_calculator.py::test_calculate_add_cases[negative_pair]@add 
+[gw1] [ 43%] PASSED test_calculator.py::test_calculate_add_cases[negative_pair]@add 
+test_calculator.py::test_calculate_add_cases[odd_plus_even]@add 
+[gw1] [ 47%] PASSED test_calculator.py::test_calculate_add_cases[odd_plus_even]@add 
+[gw2] [ 52%] PASSED test_calculator.py::test_calculate_subtract_cases[odd_minus_even]@subtract 
+[gw0] [ 56%] PASSED test_calculator.py::test_divide_by_zero_raises_value_error@divide 
+test_calculator.py::test_calculate_divide_cases[small_positive]@divide 
+[gw0] [ 60%] PASSED test_calculator.py::test_calculate_divide_cases[small_positive]@divide 
+test_calculator.py::test_calculate_divide_cases[whole_number]@divide 
+[gw0] [ 65%] PASSED test_calculator.py::test_calculate_divide_cases[whole_number]@divide 
+test_calculator.py::test_calculate_divide_cases[whole_result]@divide 
+[gw0] [ 69%] PASSED test_calculator.py::test_calculate_divide_cases[whole_result]@divide 
+[gw3] [ 73%] PASSED test_calculator.py::test_calculate_multiply_cases[odd_times_even]@multiply 
+test_calculator.py::test_calculate_add_cases[mixed_large]@add 
+test_calculator.py::test_calculate_subtract_cases[negative_result]@subtract 
+[gw2] [ 78%] PASSED test_calculator.py::test_calculate_subtract_cases[negative_result]@subtract 
+test_calculator.py::test_calculate_with_invalid_operation@misc 
+test_calculator.py::test_calculate_multiply_cases[negative_pair]@multiply 
+[gw3] [ 82%] PASSED test_calculator.py::test_calculate_multiply_cases[negative_pair]@multiply 
+test_calculator.py::test_calculate_divide_cases[negative_result]@divide 
+[gw0] [ 86%] PASSED test_calculator.py::test_calculate_divide_cases[negative_result]@divide 
+[gw1] [ 91%] PASSED test_calculator.py::test_calculate_add_cases[mixed_large]@add 
+[gw2] [ 95%] PASSED test_calculator.py::test_calculate_with_invalid_operation@misc 
+test_calculator.py::test_calculator_class_wrapper@misc 
+[gw2] [100%] PASSED test_calculator.py::test_calculator_class_wrapper@misc 
+
+- generated xml file: /home/team2/Desktop/samuel/test_runs/pytest-20260407-174408-386768.xml -
+============================== 23 passed in 2.08s ==============================

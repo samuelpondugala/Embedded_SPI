@@ -1,0 +1,70 @@
+2026-04-13 17:23:53,741 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:23:53,741 - [INFO] - Starting I2C bus scan...
+2026-04-13 17:23:53,761 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:23:53,761 - [ERROR] - Target DUT (OLED at 0x3c) not found. Skipping targeted tests.
+2026-04-13 17:23:53,761 - [INFO] - I2C bus closed.
+2026-04-13 17:26:58,567 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:26:58,568 - [INFO] - Starting I2C bus scan...
+2026-04-13 17:26:58,587 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:26:58,588 - [ERROR] - Target DUT (OLED at 0x3c) not found. Skipping targeted tests.
+2026-04-13 17:26:58,588 - [INFO] - I2C bus closed.
+2026-04-13 17:28:30,774 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:28:30,775 - [INFO] - Starting I2C bus scan...
+2026-04-13 17:28:30,793 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:28:30,793 - [ERROR] - Target DUT (OLED at 0x3c) not found. Skipping targeted tests.
+2026-04-13 17:28:30,794 - [INFO] - I2C bus closed.
+2026-04-13 17:28:49,875 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:28:49,875 - [INFO] - Starting I2C bus scan...
+2026-04-13 17:28:49,894 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:28:49,894 - [ERROR] - Target DUT (OLED at 0x3c) not found. Skipping targeted tests.
+2026-04-13 17:28:49,894 - [INFO] - I2C bus closed.
+2026-04-13 17:33:55,319 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:33:55,319 - [INFO] - Starting I2C bus scan...
+2026-04-13 17:33:55,337 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:33:55,338 - [ERROR] - OLED (0x3C) not found on I2C bus. Detected: []
+2026-04-13 17:33:55,338 - [INFO] - I2C bus closed.
+2026-04-13 17:34:49,564 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:34:49,564 - [INFO] - Starting I2C bus scan using i2cdetect...
+2026-04-13 17:34:49,565 - [ERROR] - Failed to scan I2C bus: name 'subprocess' is not defined
+2026-04-13 17:34:49,566 - [ERROR] - OLED (0x3C) not found on I2C bus. Detected: []
+2026-04-13 17:34:49,566 - [INFO] - I2C bus closed.
+2026-04-13 17:35:19,869 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:35:19,871 - [INFO] - Starting I2C bus scan using i2cdetect...
+2026-04-13 17:35:19,891 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:35:19,891 - [ERROR] - OLED (0x3C) not found on I2C bus. Detected: []
+2026-04-13 17:35:19,892 - [INFO] - I2C bus closed.
+2026-04-13 17:36:28,444 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:36:28,444 - [INFO] - Starting I2C bus scan using i2cdetect...
+2026-04-13 17:36:28,463 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:36:28,463 - [ERROR] - OLED (0x3C) not found on I2C bus. Detected: []
+2026-04-13 17:36:28,464 - [INFO] - I2C bus closed.
+2026-04-13 17:38:28,848 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:38:28,849 - [INFO] - Starting I2C bus scan using i2cdetect...
+2026-04-13 17:38:28,866 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:38:28,867 - [ERROR] - OLED (0x3C) not found on I2C bus. Detected: []
+2026-04-13 17:38:28,867 - [INFO] - I2C bus closed.
+2026-04-13 17:39:18,884 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:39:18,884 - [INFO] - Starting I2C bus scan using i2cdetect...
+2026-04-13 17:39:18,902 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:39:18,902 - [ERROR] - OLED (0x3C) not found on I2C bus. Detected: []
+2026-04-13 17:39:18,903 - [INFO] - I2C bus closed.
+2026-04-13 17:39:41,117 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:39:41,117 - [INFO] - Starting I2C bus scan using i2cdetect...
+2026-04-13 17:39:41,120 - [ERROR] - Failed to scan I2C bus: Command '['i2cdetect', '-y', '1', '1']' returned non-zero exit status 1.
+2026-04-13 17:39:41,120 - [ERROR] - OLED (0x3C) not found on I2C bus. Detected: []
+2026-04-13 17:39:41,121 - [INFO] - I2C bus closed.
+2026-04-13 17:39:53,799 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:39:53,799 - [INFO] - Starting I2C bus scan using i2cdetect...
+2026-04-13 17:39:53,817 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:39:53,818 - [ERROR] - OLED (0x3C) not found on I2C bus. Detected: []
+2026-04-13 17:39:53,818 - [INFO] - I2C bus closed.
+2026-04-13 17:44:14,995 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:44:14,995 - [INFO] - Starting I2C bus scan using i2cdetect...
+2026-04-13 17:44:15,013 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:44:15,014 - [ERROR] - OLED (0x3C) not found on I2C bus. Detected: []
+2026-04-13 17:44:15,014 - [INFO] - I2C bus closed.
+2026-04-13 17:47:36,922 - [INFO] - Successfully opened I2C bus 1
+2026-04-13 17:47:36,922 - [INFO] - Starting I2C bus scan using i2cdetect...
+2026-04-13 17:47:36,939 - [WARNING] - No I2C devices found on the bus.
+2026-04-13 17:47:36,940 - [ERROR] - OLED (0x3C) not found on I2C bus. Detected: []
+2026-04-13 17:47:36,940 - [INFO] - I2C bus closed.
