@@ -29,16 +29,26 @@ def init_sd():
     spi.max_speed_hz = 400000
     spi.xfer([0xFF] * 10)
 
-    print("CMD0:", hex(send_cmd(0, 0, 0x95)))
+    cmd0_resp = send_cmd(0, 0, 0x95)
+    print("CMD0:", hex(cmd0_resp))
     print("CMD8:", hex(send_cmd(8, 0x1AA, 0x87)))
 
-    while True:
+    # If the card doesn't even respond to the first ping, abort immediately!
+    if cmd0_resp == -1:
+        raise OSError("CMD0 Timeout: SD Card is not responding. Is it plugged in?")
+
+    # Replace 'while True' with a safe timeout loop
+    timeout = 1000
+    while timeout > 0:
         send_cmd(55, 0, 0)
         resp = send_cmd(41, 0x40000000, 0)
         if resp == 0:
-            break
+            print("Card initialized!")
+            return True
+        timeout -= 1
 
-    print("Card initialized!")
+    # If we run out of attempts, raise a fatal error
+    raise OSError("ACMD41 Initialization Timeout! Card refused to power up.")
 
 
 # ---------------- READ OCR ----------------
