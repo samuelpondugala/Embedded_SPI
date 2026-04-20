@@ -1,10 +1,7 @@
 import spidev
 import RPi.GPIO as GPIO
 import time
-from PIL import Image
-import glob
 
-# ---------------- PINS ----------------
 DC = 24
 RST = 25
 
@@ -13,23 +10,22 @@ GPIO.setwarnings(False)
 GPIO.setup(DC, GPIO.OUT)
 GPIO.setup(RST, GPIO.OUT)
 
-# ---------------- SPI ----------------
 spi = spidev.SpiDev()
 spi.open(0, 0)
 spi.max_speed_hz = 20000000
 
-# ---------------- LOW LEVEL ----------------
+# -------- LOW LEVEL --------
 def cmd(c):
     GPIO.output(DC, 0)
     spi.writebytes([c])
 
-def data16(d):
+def data(d):
     GPIO.output(DC, 1)
     spi.writebytes([d >> 8, d & 0xFF])
 
 def write_reg(reg, val):
     cmd(reg)
-    data16(val)
+    data(val)
 
 def reset():
     GPIO.output(RST, 0)
@@ -37,7 +33,7 @@ def reset():
     GPIO.output(RST, 1)
     time.sleep(0.1)
 
-# ---------------- INIT ----------------
+# -------- REAL INIT --------
 def init_display():
     reset()
 
@@ -63,6 +59,7 @@ def init_display():
     write_reg(0x31, 0x00DB)
     write_reg(0x32, 0x0000)
     write_reg(0x33, 0x0000)
+
     write_reg(0x34, 0x00DB)
     write_reg(0x35, 0x0000)
 
@@ -77,9 +74,9 @@ def init_display():
     write_reg(0x58, 0x0710)
     write_reg(0x59, 0x0710)
 
-    write_reg(0x07, 0x1017)  # DISPLAY ON
+    write_reg(0x07, 0x1017)  # Display ON
 
-# ---------------- WINDOW ----------------
+# -------- DRAW --------
 def set_window(x1, y1, x2, y2):
     write_reg(0x36, x2)
     write_reg(0x37, x1)
@@ -89,49 +86,17 @@ def set_window(x1, y1, x2, y2):
     write_reg(0x21, y1)
     cmd(0x22)
 
-# ---------------- FAST IMAGE DISPLAY ----------------
-def display_image_fast(image_path):
-    img = Image.open(image_path).convert("RGB")
-    img = img.resize((176, 220))
-
+def fill_screen(color):
     set_window(0, 0, 175, 219)
     GPIO.output(DC, 1)
+    for _ in range(176 * 220):
+        spi.writebytes([color >> 8, color & 0xFF])
 
-    pixels = img.load()
-
-    buffer = []
-
-    for y in range(220):
-        for x in range(176):
-            r, g, b = pixels[x, y]
-            color = ((r & 0xF8) << 8) | ((g & 0xFC) << 3) | (b >> 3)
-            buffer.append(color >> 8)
-            buffer.append(color & 0xFF)
-
-    # 🔥 SEND IN CHUNKS (fix)
-    CHUNK_SIZE = 4096 #CHUNK_SIZE = 2048
-    
-    for i in range(0, len(buffer), CHUNK_SIZE):
-        spi.writebytes(buffer[i:i+CHUNK_SIZE])
-
-# ---------------- VIDEO PLAYER ----------------
-def play_frames(folder=".", fps=10):
-    frame_delay = 1.0 / fps
-
-    frames = sorted(glob.glob(f"{folder}/frame_*.jpg"))
-
-    print(f"Playing {len(frames)} frames at {fps} FPS")
-
-    for frame in frames:
-        start = time.time()
-
-        display_image_fast(frame)
-
-        elapsed = time.time() - start
-        time.sleep(max(0, frame_delay - elapsed))
-
-# ---------------- MAIN ----------------
+# -------- RUN --------
 init_display()
 
-# change folder if needed
-play_frames(folder=".", fps=10)
+fill_screen(0xF800)  # RED
+time.sleep(2)
+fill_screen(0x07E0)  # GREEN
+time.sleep(2)
+fill_screen(0x001F)  # BLUE

@@ -2,7 +2,6 @@ import spidev
 import RPi.GPIO as GPIO
 import time
 from PIL import Image
-import glob
 
 # ---------------- PINS ----------------
 DC = 24
@@ -89,49 +88,28 @@ def set_window(x1, y1, x2, y2):
     write_reg(0x21, y1)
     cmd(0x22)
 
-# ---------------- FAST IMAGE DISPLAY ----------------
-def display_image_fast(image_path):
+# ---------------- IMAGE DISPLAY ----------------
+def display_image(image_path):
     img = Image.open(image_path).convert("RGB")
-    img = img.resize((176, 220))
+    img = img.resize((176, 220))  # MUST match display
 
     set_window(0, 0, 175, 219)
+
     GPIO.output(DC, 1)
 
     pixels = img.load()
 
-    buffer = []
-
     for y in range(220):
         for x in range(176):
             r, g, b = pixels[x, y]
+
+            # Convert RGB888 → RGB565
             color = ((r & 0xF8) << 8) | ((g & 0xFC) << 3) | (b >> 3)
-            buffer.append(color >> 8)
-            buffer.append(color & 0xFF)
 
-    # 🔥 SEND IN CHUNKS (fix)
-    CHUNK_SIZE = 4096 #CHUNK_SIZE = 2048
-    
-    for i in range(0, len(buffer), CHUNK_SIZE):
-        spi.writebytes(buffer[i:i+CHUNK_SIZE])
-
-# ---------------- VIDEO PLAYER ----------------
-def play_frames(folder=".", fps=10):
-    frame_delay = 1.0 / fps
-
-    frames = sorted(glob.glob(f"{folder}/frame_*.jpg"))
-
-    print(f"Playing {len(frames)} frames at {fps} FPS")
-
-    for frame in frames:
-        start = time.time()
-
-        display_image_fast(frame)
-
-        elapsed = time.time() - start
-        time.sleep(max(0, frame_delay - elapsed))
+            spi.writebytes([color >> 8, color & 0xFF])
 
 # ---------------- MAIN ----------------
 init_display()
 
-# change folder if needed
-play_frames(folder=".", fps=10)
+# Change this to your image file
+display_image("sample.jpg")
